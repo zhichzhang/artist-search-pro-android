@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--day-->
+    <color name="background_day">#FAF7FC</color>
+    <color name="top_bar_day">#E0E8FF</color>
+    <color name="text_day">#000000</color>
+    <color name="icon_day">#000000</color>
+
+    <color name="button_background_day">#3A5384</color>
+    <color name="button_text_day">#FFFFFF</color>
+
+    <color name="tab_day">#263D6C</color>
+    <color name="tab_title_day">#263D6C</color>
+
+    <color name="category_dialog_background_day">#E5E2E7</color>
+    <color name="category_dialog_title_day">#000000</color>
+    <color name="category_dialog_text_day">#000000</color>
+    <color name="category_card_background_day">#DDDDE1</color>
+
+    <color name="card_background_day">#FFFFFF</color>
+    <color name="card_title_background_day">#CCE0E8FF</color>
+    <color name="card_title_text_day">#000000</color>
+
+    <color name="favorite_card_background_day">#FFFFFF</color>
+    <color name="favorite_card_text_day">#000000</color>
+
+
+    <color name="artwork_card_background_day">#F3F0F5</color>
+    <color name="artwork_card_text_day">#000000</color>
+
+    <color name="home_screen_dropdown_menu_background_day">#F4F3F7</color>
+    <color name="home_screen_dropdown_menu_logout_text_day">#3374C3</color>
+    <color name="home_screen_dropdown_menu_delete_account_text_day">#B0413C</color>
+
+    <color name="home_screen_current_date_text_color_day">#ACB0BA</color>
+    <color name="home_screen_favorites_text_color_day">#000000</color>
+    <color name="home_screen_favorites_background_color_day">#F4F3F7</color>
+
+    <color name="loading_circle_front_day">#494C5E</color>
+    <color name="loading_circle_back_day">#DBDCE7</color>
+    <color name="loading_circle_text_day">#494C5E</color>
+
+    <color name="placeholder_color_day">#4D5C7F</color>
+
+<!--    <color name="category_dialog_background_day">#E5E2E7</color>-->
+
+    <!--night-->
+    <color name="background_night">#131215</color>
+    <color name="top_bar_night">#263D6C</color>
+    <color name="text_night">#FFFFFF</color>
+    <color name="icon_night">#FFFFFF</color>
+
+    <color name="button_background_night">#A4BDFE</color>
+    <color name="button_text_night">#000000</color>
+
+    <color name="tab_night">#E0E8FF</color>
+    <color name="tab_title_night">#E0E8FF</color>
+
+    <color name="category_dialog_background_night">#000000</color>
+    <color name="category_dialog_title_night">#FFFFFF</color>
+    <color name="category_dialog_text_night">#FFFFFF</color>
+
+    <color name="card_background_night">#000000</color>
+    <color name="card_title_background_night">#CC263D6C</color>
+    <color name="card_title_text_night">#FFFFFF</color>
+
+    <color name="favorite_card_background_night">#000000</color>
+    <color name="favorite_card_text_night">#FFFFFF</color>
+
+    <color name="category_card_background_night">#2C2E30</color>
+
+    <color name="artwork_card_background_night">#1A191C</color>
+    <color name="artwork_card_text_night">#FFFFFF</color>
+
+    <color name="home_screen_dropdown_menu_background_night">#2C2E30</color>
+    <color name="home_screen_dropdown_menu_logout_text_night">#3374C3</color>
+    <color name="home_screen_dropdown_menu_delete_account_text_night">#B0413C</color>
+
+    <color name="home_screen_current_date_text_color_night">#FFFFFF</color>
+    <color name="home_screen_favorites_text_color_night">#FFFFFF</color>
+    <color name="home_screen_favorites_background_color_night">#2C2E30</color>
+
+    <color name="loading_circle_front_night">#DBDCE7</color>
+    <color name="loading_circle_back_night">#494C5E</color>
+    <color name="loading_circle_text_night">#DBDCE7</color>
+
+    <color name="placeholder_color_night">#A1B3DE</color>
+<!--    <color name="category_dialog_background_night">#252527</color>-->
+
+    <!--unchanged-->
+    <color name="error_color">#A63F3C</color>
+
+</resources>

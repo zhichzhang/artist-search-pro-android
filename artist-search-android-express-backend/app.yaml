@@ -1,0 +1,14 @@
+runtime: nodejs20
+entrypoint: node app.js
+
+instance_class: F1
+
+
+env_variables:
+  FRONTEND_URL: 'https://final-zhicheng-zhang.wl.r.appspot.com'
+  NODE_ENV: 'production'
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
