@@ -1,4 +1,4 @@
-# Artist Search Pro (Android)
+# Artist Search Pro (Android Application)
 
 ## 介绍 / Intro
 
@@ -39,7 +39,7 @@ This project is the Android version of [Artist Search Pro](https://github.com/zh
 - **图像加载 / Image Loading**：Coil  
 - **会话管理 / Session Management**：PersistentCookieJar, SharedPreferences  
 - **用户界面 / UI Components**：Material Design 3, LazyColumn, Dialog, Tabs, Snackbars  
-- **后端服务 / Backend**：复用 Node.js + MongoDB 的 Web 后端（部署于 Google App Engine）
+- **后端服务 / Backend**：Express.js, MongoDB, Google Cloud Platform
 
 ## 注意事项 / Caution
 
