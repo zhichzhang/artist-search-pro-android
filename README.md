@@ -2,7 +2,7 @@
 
 ## 介绍 / Intro
 
-> 移动端版本演示视频链接为 [Artist Search Pro (Android)](https://drive.google.com/file/d/1_plcrQuS48yen1FspJjxYa6ySYteNF2v/view?usp=sharing)  
+> 移动端版本演示视频链接为 [artist-search-pro-android-presentation.mp4](https://drive.google.com/file/d/1xBWYpmpEkb--CG6Ag7SgFY3RbjRUEzDk/view?usp=sharing)
 > The presentation video of the Android version is available here: [artist-search-pro-android-presentation.mp4](https://drive.google.com/file/d/1xBWYpmpEkb--CG6Ag7SgFY3RbjRUEzDk/view?usp=sharing)
 
 本项目是 [Artist Search Pro](https://github.com/zhichzhang/artist-search) 的移动端版本，基于 Jetpack Compose 和 Kotlin 构建，并使用 Retrofit 进行网络通信。该版本完整实现了网页版，即[Artist Search Pro (Web Application)](https://github.com/zhichzhang/artist-search-pro)，的所有核心功能，包括艺术家搜索、详细信息展示、用户登录与注册、艺术家收藏、作品与风格分类展示以及相似艺术家推荐等。同时针对移动端用户体验进行了优化，新增了启动画面、作品分类弹窗轮播、会话持久化、深色模式与 Snackbar 提示机制，带来更顺畅的交互体验。
