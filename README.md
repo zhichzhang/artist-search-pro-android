@@ -1,48 +1,63 @@
 # Artist Search Pro (Android Application)
 
-## 介绍 / Intro
+This project is available in multiple languages:
 
-> 移动端版本演示视频链接为 [artist-search-pro-android-presentation.mp4](https://drive.google.com/file/d/1xBWYpmpEkb--CG6Ag7SgFY3RbjRUEzDk/view?usp=sharing)  
-> The presentation video of the Android version is available here: [artist-search-pro-android-presentation.mp4](https://drive.google.com/file/d/1xBWYpmpEkb--CG6Ag7SgFY3RbjRUEzDk/view?usp=sharing)
+- [English](README.md)
+- [简体中文](README.zh-CN.md)
 
-本项目是 [Artist Search Pro](https://github.com/zhichzhang/artist-search) 的移动端版本，基于 Jetpack Compose 和 Kotlin 构建，并使用 Retrofit 进行网络通信。该版本完整实现了网页版，即[Artist Search Pro (Web Application)](https://github.com/zhichzhang/artist-search-pro)，的所有核心功能，包括艺术家搜索、详细信息展示、用户登录与注册、艺术家收藏、作品与风格分类展示以及相似艺术家推荐等。同时针对移动端用户体验进行了优化，新增了启动画面、作品分类弹窗轮播、会话持久化、深色模式与 Snackbar 提示机制，带来更顺畅的交互体验。
+## Introduction
 
-This project is the Android version of [Artist Search Pro](https://github.com/zhichzhang/artist-search), built using Jetpack Compose and Kotlin, with Retrofit for backend communication. It fully implements the core features of the web version, namely [Artist Search Pro (Web Application)](https://github.com/zhichzhang/artist-search-pro), including artist search, detailed artist information, user authentication and registration, artist favoriting, artwork and style category display, and similar artist recommendations. Additionally, the Android version is optimized for mobile UX with enhancements like a splash screen, category carousel dialogs, persistent login, dark mode, and Snackbar feedback for key interactions.
+> Mobile version demo video: [artist-search-pro-android-presentation.mp4](https://drive.google.com/file/d/1xBWYpmpEkb--CG6Ag7SgFY3RbjRUEzDk/view?usp=sharing)
 
-## 核心功能 / Key Features
+This project is the mobile version of [Artist Search Pro](https://github.com/zhichzhang/artist-search), built with Jetpack Compose and Kotlin, utilizing Retrofit for network communication. It fully implements all core features of the web version, [Artist Search Pro (Web Application)](https://github.com/zhichzhang/artist-search-pro), including artist search, detailed artist information display, user login and registration, artist favorites, artwork and style categorization, and similar artist recommendations. Additionally, it is optimized for mobile user experience, featuring a splash screen, artwork category carousel dialogs, session persistence, dark mode, and Snackbar notifications for smoother interaction.
 
-- 艺术家搜索（输入超过 3 个字符后自动触发，含防抖处理）  
-  Artist search triggered automatically when more than 3 characters are entered, with debounce logic to reduce unnecessary API calls  
-- 艺术家详情页（基础信息与简介）  
-  Artist detail screen with biography and metadata  
-- 收藏管理（添加 / 移除收藏，后端同步）  
-  Favorite management with backend synchronization  
-- 作品展示（支持分类查看）  
-  Artwork display with category viewing support  
-- 相似艺术家推荐（登录后可见）  
-  Similar artist recommendation (visible after login)  
-- 用户认证与持久化登录（基于 CookieJar）  
-  User authentication and persistent login via `PersistentCookieJar`  
-- 分类弹窗轮播展示  
-  Artwork categories shown in a carousel within a dialog  
-- 深色模式支持  
-  Support for dark theme  
-- 全局 Snackbar 提示机制  
-  Global snackbar-based feedback system  
-- 启动画面（Splash Screen）  
-  Splash screen for app startup
+## Core Features
 
-## 技术栈 / Tech Stack
+- **Guest Features**  
+  - Artist Name Search  
+    - Debounced search recommendations: Automatically triggers card-style recommendations when input exceeds 3 characters, with built-in debounce to improve performance and responsiveness.  
+  - Artist Detail View  
+    - Basic Artist Information: Displays name, nationality, birth date, death date, biography, and other details.  
+    - Artist Works Collection: Card-style display of artist’s works, supporting categorized carousel dialogs.
 
-- **语言与框架 / Language & Framework**：Kotlin, Jetpack Compose  
-- **网络通信 / Networking**：Retrofit, OkHttp, Kotlinx Serialization  
-- **图像加载 / Image Loading**：Coil  
-- **会话管理 / Session Management**：PersistentCookieJar, SharedPreferences  
-- **用户界面 / UI Components**：Material Design 3, LazyColumn, Dialog, Tabs, Snackbars  
-- **后端服务 / Backend**：Express.js, MongoDB, Google Cloud Platform
+- **Registered User Features**  
+  - Artist Name Search (includes all guest features)  
+    - Favorites: Star icon on search result cards to add or remove artists from favorites.  
+  - Artist Detail View (includes all guest features)  
+    - Similar Artist Recommendations: Card-style display of artists with similar styles; users can favorite/unfavorite via star icon or tap the card to navigate to the artist’s detail page.  
+    - Favorites: Star icon on the artist detail page for quick favorite/unfavorite.  
+  - Favorites Management on Home  
+    - Favorites Display: Shows cards of artists favorited by the user, including name, nationality, birth/death dates, and timestamp.  
+    - Navigation: Tap a favorite card to open the corresponding artist detail page.  
+  - Account Authentication and Session Management  
+    - Logout: Adds the user’s cookies to a blacklist to immediately invalidate the current session.  
+    - Account Deletion: Supports user account removal, clearing session and authentication data upon deletion.  
+    - Session Persistence: Automatically restores previous login state if cookies are still valid.
 
-## 注意事项 / Caution
+- **General Features**  
+  - Current Date Display on Home Page  
+  - Light/Dark Theme Switching  
+  - Splash Screen Display  
+  - Authentication and Account Management  
+    - Login  
+      - Field validation  
+      - Account and password verification; upon success, issues cookies and redirects to the logged-in home page  
+      - Provides link to the registration page  
+    - Registration  
+      - Field validation  
+      - Secure storage of user data  
+      - Upon successful registration, issues cookies and redirects to the logged-in home page  
+      - Provides link to the login page
 
-本项目仅供研究与讨论使用。请勿抄袭或将本代码作为课程作业提交。  
+## Technology Stack
 
-This project is intended solely for research and discussion purposes. Please refrain from copying or submitting this code as part of any academic assignments.
+- **Languages & Frameworks:** Kotlin, Jetpack Compose  
+- **Networking:** Retrofit, OkHttp, Kotlinx Serialization  
+- **Image Loading:** Coil  
+- **Session Management:** PersistentCookieJar, SharedPreferences  
+- **UI Components:** Material Design 3, LazyColumn, Dialog, Tabs, Snackbars  
+- **Backend Services:** Express.js, MongoDB, Google Cloud Platform
+
+## Disclaimer
+
+This project is intended for research and discussion purposes only. Please do not plagiarize or submit this code as coursework.
